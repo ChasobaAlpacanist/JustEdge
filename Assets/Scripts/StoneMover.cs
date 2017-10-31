@@ -5,16 +5,16 @@ using UnityEngine;
 public class StoneMover : MonoBehaviour {
 
 	Rigidbody r;
+    public SliderController slider;
 
 	bool touch;
-	float initialVelocity;
+	public int coSpeed;
 
 	// Use this for initialization
 	void Start () 
 	{
 		r = GetComponent<Rigidbody> ();
 		touch = true;
-		initialVelocity = 15;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class StoneMover : MonoBehaviour {
 	{
 		if(Input.GetButton("Vertical") && touch)
 		{
-			r.velocity = new Vector3 (0, 0, initialVelocity);
+			r.velocity = new Vector3 (0, 0, slider.SetSpeed() * coSpeed);
 			touch = false;
 		}
 	}

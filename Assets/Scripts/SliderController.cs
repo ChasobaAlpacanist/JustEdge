@@ -9,6 +9,7 @@ public class SliderController : MonoBehaviour {
 	public float degree;
 
 	Slider power;
+    bool changeSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -24,4 +25,9 @@ public class SliderController : MonoBehaviour {
 	void LateUpdate(){
 		power.value = 0.5f + 0.5f * Mathf.Sin (degree * Mathf.Deg2Rad);
 	}
+
+    public float SetSpeed() {
+        changeSpeed = false;
+        return power.value;
+    }
 }

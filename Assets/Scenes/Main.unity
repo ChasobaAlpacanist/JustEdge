@@ -151,6 +151,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114234860118283170, guid: 4ded5e01c4bb5a6439a60e0a809be635,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 664393813}
+    - target: {fileID: 114234860118283170, guid: 4ded5e01c4bb5a6439a60e0a809be635,
+        type: 2}
+      propertyPath: coSpeed
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ded5e01c4bb5a6439a60e0a809be635, type: 2}
   m_IsPrefabParent: 0
