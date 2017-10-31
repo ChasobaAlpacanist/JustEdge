@@ -15,11 +15,14 @@ public class SliderController : MonoBehaviour {
 	void Start () {
 		power = GetComponent<Slider> ();
 		degree = 0;
+		changeSpeed = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		degree += speed * Time.deltaTime;
+		if (changeSpeed) {
+			degree += speed * Time.deltaTime;
+		}
 	}
 
 	void LateUpdate(){
