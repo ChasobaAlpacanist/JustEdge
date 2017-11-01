@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class SliderController : MonoBehaviour {
 
 	public int speed;
-	public float degree;
 
 	Slider power;
     bool changeSpeed;
+    float degree;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		power = GetComponent<Slider> ();
 		degree = 0;
 		changeSpeed = true;

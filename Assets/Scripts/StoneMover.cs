@@ -10,20 +10,22 @@ public class StoneMover : MonoBehaviour {
 	bool touch;
 	public int coSpeed;
 
-	// Use this for initialization
 	void Start () 
 	{
 		r = GetComponent<Rigidbody> ();
-		touch = true;
+		touch = false;
 	}
 	
-	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetButton("Vertical") && touch)
+		if(touch)
 		{
 			r.velocity = new Vector3 (0, 0, slider.SetSpeed() * coSpeed);
 			touch = false;
 		}
 	}
+
+    public void Launch() {
+        touch = true;
+    }
 }

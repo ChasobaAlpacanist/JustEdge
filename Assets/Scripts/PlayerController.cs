@@ -1,0 +1,2 @@
+﻿using System.Collections;using System.Collections.Generic;using UnityEngine;public class PlayerController : MonoBehaviour {    public StoneMover stone;    bool launch;	void Start () {
+        launch = true;	}		void Update () {        if (Input.GetButton("Vertical") && launch) {            launch = false;            stone.Launch();         }	}}

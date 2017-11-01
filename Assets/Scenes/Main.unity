@@ -169,6 +169,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1337951504484580, guid: 4ded5e01c4bb5a6439a60e0a809be635,
     type: 2}
   m_PrefabInternal: {fileID: 50076898}
+--- !u!114 &229996565 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114234860118283170, guid: 4ded5e01c4bb5a6439a60e0a809be635,
+    type: 2}
+  m_PrefabInternal: {fileID: 50076898}
+  m_Script: {fileID: 11500000, guid: b23422f6e376aa14fa8665ae573bfa85, type: 3}
 --- !u!1001 &294465946
 Prefab:
   m_ObjectHideFlags: 0
@@ -312,7 +318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 90
-  degree: 0
 --- !u!1 &700767579
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +451,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &923521593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 923521594}
+  - component: {fileID: 923521595}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &923521594
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923521593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923521595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923521593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d8721cd607b0a4d89a1bf1dc5a9443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stone: {fileID: 229996565}
 --- !u!1 &953769908
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +810,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1956818091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90.95}
+  m_LocalPosition: {x: 0, y: -0.025, z: 90.95}
   m_LocalScale: {x: 10, y: 0.5, z: 2}
   m_Children: []
   m_Father: {fileID: 1311678460}
