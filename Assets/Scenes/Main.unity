@@ -492,6 +492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stone: {fileID: 229996565}
+  zPosi: 0.59
+  UNK: {fileID: 1772962459750054, guid: 00ed8ec42b3c0414bbda5087bae4425e, type: 2}
 --- !u!1 &953769908
 GameObject:
   m_ObjectHideFlags: 0
