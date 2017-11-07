@@ -24,8 +24,8 @@ public class StoneMover : MonoBehaviour {
 			touch = false;
 		}
 	}
-
-    public void Launch() {
+    
+	public void Launch() {
         touch = true;
     }
 }

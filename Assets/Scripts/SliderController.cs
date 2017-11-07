@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class SliderController : MonoBehaviour {
 
-	public int speed;
+	private int speed;
 
 	Slider power;
-    bool changeSpeed;
-    float degree;
+	private bool changeSpeed;
+    private float degree;
 
     // Use this for initialization
     void Start () {
 		power = GetComponent<Slider> ();
 		degree = 0;
+		speed = 90;
 		changeSpeed = true;
 	}
 	

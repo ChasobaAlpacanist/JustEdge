@@ -149,7 +149,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4328814228232326, guid: 4ded5e01c4bb5a6439a60e0a809be635, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114234860118283170, guid: 4ded5e01c4bb5a6439a60e0a809be635,
         type: 2}
@@ -492,8 +492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stone: {fileID: 229996565}
-  zPosi: 10
-  UNK: {fileID: 1772962459750054, guid: 00ed8ec42b3c0414bbda5087bae4425e, type: 2}
+  smoothGround: {fileID: 1959158170819958, guid: eff703ecf02dc4cb4b9597047d4e4bc2,
+    type: 2}
 --- !u!1 &953769908
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +723,7 @@ Transform:
   - {fileID: 1168280824}
   - {fileID: 1956818092}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889568943
 GameObject:
