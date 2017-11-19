@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public StoneMover stone;
+	public NurunuruController nuruLife;
     bool launch;
 
 	private Vector3 position;
@@ -24,7 +25,10 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (Input.GetMouseButtonDown(0)) {
-			SmoothGround ();
+			if (nuruLife.GetLife () > 0) {
+				SmoothGround ();
+				nuruLife.Lifereduce ();
+			}
         }
 	}
 
