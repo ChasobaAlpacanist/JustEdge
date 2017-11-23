@@ -24,11 +24,9 @@ public class PlayerController : MonoBehaviour {
             stone.Launch(); 
         }
 
-        if (Input.GetMouseButtonDown(0)) {
-			if (nuruLife.GetLife () > 0) {
-				SmoothGround ();
-				nuruLife.Lifereduce ();
-			}
+        if (Input.GetMouseButtonDown(0) && launch == false && nuruLife.GetLife() > 0) {
+			SmoothGround ();
+			nuruLife.Lifereduce ();
         }
 	}
 

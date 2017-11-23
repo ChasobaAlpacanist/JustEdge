@@ -28,4 +28,9 @@ public class StoneMover : MonoBehaviour {
 	public void Launch() {
         touch = true;
     }
+
+    public Vector3 Getvelocity()
+    {
+        return r.velocity;
+    }
 }
