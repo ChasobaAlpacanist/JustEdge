@@ -24,15 +24,17 @@ public class PlayerController : MonoBehaviour {
             stone.Launch(); 
         }
 
-        if (Input.GetMouseButtonDown(0) && launch == false && nuruLife.GetLife() > 0) {
+        /*if (Input.GetMouseButtonDown(0)) {
 			SmoothGround ();
-			nuruLife.Lifereduce ();
-        }
+        }*/
 	}
 
-	void SmoothGround(){
-		Instantiate (smoothGround,
-			position,
-			Quaternion.identity);
+	public void SmoothGround(){
+		if (launch == false && nuruLife.GetLife () > 0) {
+			Instantiate (smoothGround,
+				position,
+				Quaternion.identity);
+			nuruLife.Lifereduce ();
+		}
 	}
 }
