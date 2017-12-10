@@ -6,7 +6,11 @@ public class PlayerController : MonoBehaviour {
 
     public StoneMover stone;
 	public NurunuruController nuruLife;
-    bool launch;
+    
+	bool launch;
+	public bool Getlaunch() {
+		return launch;
+	}
 
 	private Vector3 position;
 
