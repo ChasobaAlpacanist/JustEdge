@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public StoneMover stone;
+    public StoneController stone;
 	public NurunuruController nuruLife;
+	public SliderController slider;
     
 	bool launch;
 	public bool Getlaunch() {
@@ -24,13 +25,10 @@ public class PlayerController : MonoBehaviour {
 		position.z += 10;
 
 		if (Input.GetButton("Vertical") && launch) {
-            launch = false;
-            stone.Launch(); 
-        }
+			stone.SetVelocity (slider.SetSpeed());
+			launch = false;
 
-        /*if (Input.GetMouseButtonDown(0)) {
-			SmoothGround ();
-        }*/
+        }
 	}
 
 	public void SmoothGround(){

@@ -5,20 +5,23 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public StoneMover stone;
+    public StoneController stone;
     public GoalController goalController;
     public Text clearText;
 	public PlayerController playerController;
+
+	bool playable;
 	
 	void Start () {
         clearText.text = "";
+		playable = true;
 	}
 	
-	void Update () {
+	void LateUpdate () {
 		if (stone.Getvelocity ().Equals (Vector3.zero) 
 			&& goalController.GetclearCheck () == 0 
 			&& playerController.Getlaunch () == false) {
-			clearText.text = "Failure!!";
+			clearText.text = "Too Slow!!";
 		}
 
 		if (stone.Getvelocity().Equals(Vector3.zero) 
@@ -27,7 +30,11 @@ public class GameController : MonoBehaviour {
         }
 
         if (goalController.GetclearCheck() == 2){
-            clearText.text = "Failure!!";
+            clearText.text = "Too Fast!!";
+			if(playable) {
+				stone.DeathVoice ();
+				playable = false;
+			}
         }
 	}
 }
